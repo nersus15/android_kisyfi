@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opsi_jawaban">
+        <item>Tidak Pernah</item>
+        <item>Pernah</item>
+        <item>Kadang - kadang</item>
+        <item>Sering</item>
+        <item>Hampir Selalu</item>
+    </string-array>
+</resources>
