@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             "berlebihan" , "insecure" , "murung" , "mondir" , "kronis"
     };
     Button btn_send;
+    TextView hasil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         buat_selectbox();
 
         btn_send = findViewById(R.id.btn_send);
+        hasil = findViewById(R.id.hasil);
         btn_send.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void send(){
-        String url = "https://app.terasinovasi.me/auth";
+        String url = "https://1b78ea456007.ngrok.io";
         MultipartBody.Builder bodyBuilder = new MultipartBody.Builder();
         MultipartBody.Builder builder = bodyBuilder.setType(MultipartBody.FORM);
         OkHttpClient client = new OkHttpClient();
@@ -105,7 +107,9 @@ public class MainActivity extends AppCompatActivity {
         try {
             Response response = client.newCall(request).execute();
             // Do something with the response.
-            System.out.println(response);
+            String res = response.body().string();
+            System.out.println(res);
+            hasil.setText(res);
         } catch (IOException e) {
             e.printStackTrace();
         }
