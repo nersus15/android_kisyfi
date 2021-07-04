@@ -310,23 +310,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="40dp"
-                android:id="@+id/respon_tubuh"
-                tools:ignore="DuplicateIds">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-                <androidx.appcompat.widget.AppCompatSpinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="40dp"
                 android:id="@+id/terjaga_malam"
                 tools:ignore="DuplicateIds">
                 <TextView
@@ -441,23 +424,7 @@
                     android:layout_height="wrap_content"
                     />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="40dp"
-                android:id="@+id/depresi"
-                tools:ignore="DuplicateIds">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
-                </TextView>
-                <androidx.appcompat.widget.AppCompatSpinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
